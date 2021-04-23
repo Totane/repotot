@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<title>Le compte est bon</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style_lceb.css" /> 
+</head>
+<body>
+	<div class="marge_haut_page"></div>
+
+	<div id="fond_lceb">		
+		<img src="images/fond_lceb.png">
+		<div id="panneauAcceuil"></div>
+		<div id="switchEntree"></div>
+		<div id="boutonCorrection"></div>
+		<div id="boutonReponse"></div>
+		<div id="boutonLancer"></div>
+		<div id="boutonEntrer"></div>
+		<div id="switchEntree"></div>				
+		<canvas id="canvasRouleau1"></canvas>
+		<canvas id="canvasRouleau2"></canvas>
+		<canvas id="canvasRouleau3"></canvas>
+		<div id="cadreOperande1"></div>
+		<div id="cadreOperande2"></div>
+		<div id="cadreOperande3"></div>
+		<div id="cadreOperande4"></div>
+		<div id="cadreOperande5"></div>
+		<div id="cadreOperande6"></div>
+		<div id="nombre1"></div>
+		<div id="nombre2"></div>
+		<div id="nombre3"></div>		
+		<div id="nombre4"></div>
+		<div id="nombre5"></div>
+		<div id="nombre6"></div>	
+		<div id="boutonOperateur1"></div>
+		<div id="boutonOperateur2"></div>
+		<div id="boutonOperateur3"></div>
+		<div id="boutonOperateur4"></div>
+		
+		<div id="zoneCalcul" style="margin: 0px; padding: 0px;">
+			<p style="margin-top: 0px; padding-top: 0px;"><span id="calcul1" class="calcul"></span><span id="resultat1" class="resultat"></span></p>
+			<p><span id="calcul2" class="calcul"></span><span id="resultat2" class="resultat"></span></p>
+			<p><span id="calcul3" class="calcul"></span><span id="resultat3" class="resultat"></span></p>
+			<p><span id="calcul4" class="calcul"></span><span id="resultat4" class="resultat"></span></p>
+			<p><span id="calcul5" class="calcul"></span><span id="resultat5" class="resultat"></span></p>
+		</div>
+
+		<div id="zoneSaisie" style="margin: 0px; padding: 0px;">
+			
+			<p style="margin: 0px; padding: 0px";>Saisie manuelle :</p>
+			<p class="soulignement"></p>
+
+			<div id="boutonSaisie1" data-colonne="G"></div>
+			<div id="boutonSaisie2" data-colonne="G"></div>
+			<div id="boutonSaisie3" data-colonne="G"></div>
+			<div id="boutonSaisie4" data-colonne="D"></div>
+			<div id="boutonSaisie5" data-colonne="D"></div>
+			<div id="boutonSaisie6" data-colonne="D"></div>
+
+			<div id="nombreCible" style="position:absolute">
+				<p style="margin: 0px; padding: 0px;">Nombre à atteindre :</p>
+				<p class="soulignement"></p>
+				<div id="boutonSaisieCible"></div>
+				<input type="text" id="entreeCible" class="texteSansBordure" minlength="3" maxlength="3" outline="0">
+				<div id="boutonGo"></div>
+			</div>
+
+			<div id="contenuDeroulant"></div>			
+		</div>		
+	</div>
+	<script src="script_lceb.js"></script>
+</body>
+</html>
